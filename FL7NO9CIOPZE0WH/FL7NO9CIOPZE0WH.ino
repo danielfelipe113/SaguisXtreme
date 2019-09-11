@@ -48,7 +48,7 @@ void loop() {
       ServoMotor.write(45);
       Serial.println("Moving servo 45");
     }
-    if (a=='4') {
+    if (a=='1') {
       digitalWrite(MotorLeft1, HIGH);
       digitalWrite(MotorLeft2, LOW);
       
@@ -61,7 +61,7 @@ void loop() {
       digitalWrite(MotorRight1, LOW);
       
     }
-    if (a=='3') {
+    if (a=='2') {
       digitalWrite(MotorLeft2, 180);
       digitalWrite(MotorLeft1, 0);
       digitalWrite(MotorRight2, 180);
@@ -71,7 +71,7 @@ void loop() {
       digitalWrite(MotorLeft2, LOW);
       digitalWrite(MotorRight2, LOW);
     }
-    if (a=='2') {
+    if (a=='3') {
       digitalWrite(MotorLeft1, 0);
       digitalWrite(MotorLeft2, 100);
       
@@ -82,11 +82,12 @@ void loop() {
       digitalWrite(MotorRight1, 0);
       digitalWrite(MotorLeft2, 0);
     }   
-    if (a=='1') {
+    if (a=='4') {
       digitalWrite(MotorLeft1, 255);
       digitalWrite(MotorLeft2, LOW);
       digitalWrite(MotorRight2, 100);
       digitalWrite(MotorRight1, LOW);
+      Serial.println("Right");
       delay(interval);
       digitalWrite(MotorLeft1, LOW);
       digitalWrite(MotorRight2, LOW);
